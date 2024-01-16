@@ -1,2 +1,2 @@
 #Welcome!
-#Here I'm showcase my works and projects.
+#Here I'm showcasing my works and projects.

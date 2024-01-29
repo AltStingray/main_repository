@@ -1,6 +1,6 @@
 import hashlib
 
-data_bytes = bytes(input("Input your data you want to encrypt: "), "utf-8")
+data_bytes = bytes(input("Input your data you want to hash: "), "utf-8")
 #utf-8 is a standard character encoding format, it translate all the text into bytes
 # you can also represent it as data_bytes = data.encode('utf-8') 
 

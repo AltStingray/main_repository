@@ -1,0 +1,602 @@
+<html>
+ <body>
+  <div class="studio-top-bar">
+   <div class="left">
+    <a href="index">
+     <div class="header-cx-logo" data-qa="cx.ui.topBar.logo" id="cx-logo">
+     </div>
+    </a>
+    <div class="plan-name-header" data-qa="cx.ui.siteHeader.planName">
+     Basic Scriptwriting
+    </div>
+   </div>
+   <div class="right">
+    <button class="btn-subscribe" data-qa="cx.ui.subscribebtn">
+     Subscribe
+    </button>
+    <a data-qa="cx.ui.siteHeader.notifications" id="notifications-btn">
+     <i class="cxi cxi-notifications">
+     </i>
+    </a>
+    <div class="avatar-dropdown-container" style="position: relative;" tabindex="-1">
+     <div class="react-dropdown" tabindex="-1">
+      <div class="react-dropdown-toggle toggle" data-qa="cx.docs.ui.react.Dropdown" tabindex="-1">
+       <span class="react-dropdown-toggle-container">
+        <div class="avatar-dropdown" tabindex="0">
+         <div class="top-bar-avatar avatar-with-border" data-qa="cx.ui.topBar.avatar" style="--avatar-background-color: #3ebfd2; --avatar-background-image: url('https://lh3.googleusercontent.com/a/ACg8ocKb1oV2Ra5mfc0UPAEA1NQo0qjOo0DkObtlJmOEWF7-PQG4i5E=s96-c');">
+         </div>
+        </div>
+        <span data-qa="cx.ui.react.wrappedDropdown.selectedLabel">
+        </span>
+       </span>
+      </div>
+      <div class="react-dropdown-menu collapsed" data-expanded="false" data-qa="cx.ui.react.wrappedDropdown.menu">
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="main-view">
+   <div class="clearfix">
+    <nav aria-label="Studio Sidebar" class="studio-nav-container" id="sidebar">
+     <div class="prairie-nav no-animation loaded" data-qa="cx.ui.PrairieNav.sidebar">
+      <div class="project-nav-content">
+       <div class="studio-nav-header">
+        <div class="studio-nav-header-icon-name-container">
+         <div class="avatar-company-container">
+          <div class="avatar-company avatar-company-studiohead" style='background: rgb(62, 191, 210) url("undefined");'>
+          </div>
+         </div>
+         <span class="studio-nav-header-name" data-qa="cx.t.docs studiohead-name">
+          My Studio
+         </span>
+        </div>
+        <div class="studio-nav-header-create-container">
+         <button class="action-btn create-pill" data-before="Create" data-qa="cx.docs.ui.AbstractMainView new-project">
+          <span>
+           Create
+          </span>
+         </button>
+        </div>
+       </div>
+       <div class="project-nav-item selected" data-qa="cx.docs.ui.navBar.profile" tabindex="0">
+        <div class="project-nav-item-left-el">
+        </div>
+        <a class="project-nav-item-a" data-qa="cx.ui.PrairieNav nav-item.name" href="#profile" tabindex="-1" target="" title="Profile">
+         <p>
+          Profile
+         </p>
+        </a>
+        <div class="project-nav-item-right-el item-count">
+         <span class="studio-nav-count-span">
+         </span>
+        </div>
+       </div>
+       <div class="project-nav-accordion" data-expanded="false" data-qa="cx.ui.PrairieNav accordion">
+        <div class="project-nav-accordion-container">
+         <header class="project-nav-accordion-header" data-qa="cx.docs.ui.navBar.projects">
+          <div class="project-nav-item" data-qa="cx.ui.PrairieNav nav-item" tabindex="0">
+           <div class="project-nav-item-left-el">
+           </div>
+           <a class="project-nav-item-a" data-qa="cx.ui.PrairieNav nav-item.name" tabindex="-1" target="" title="Projects">
+            <p>
+             Projects
+            </p>
+           </a>
+           <div class="project-nav-item-right-el">
+            <div class="expand">
+             <i class="project-nav-item-icon cxi cxi-down" style="transform: unset;">
+             </i>
+            </div>
+           </div>
+          </div>
+         </header>
+         <div class="" data-qa="cx.ui.PrairieNav accordion-child-content" id="contentContainer" style="max-height: 0px; min-height: 0px;">
+          <div id="content">
+           <div>
+            <div class="project-nav-item" data-qa="cx.ui.navBar.projects.folder.home" tabindex="0">
+             <div class="project-nav-item-left-el">
+             </div>
+             <a class="project-nav-item-a" data-qa="cx.ui.PrairieNav nav-item.name" tabindex="-1" target="" title="Home">
+              <p>
+               Home
+              </p>
+             </a>
+             <div class="project-nav-item-right-el item-count">
+              <span class="studio-nav-count-span">
+              </span>
+             </div>
+            </div>
+            <div class="project-nav-item" data-qa="cx.ui.navBar.projects.folder.Archived" tabindex="0">
+             <div class="project-nav-item-left-el">
+             </div>
+             <a class="project-nav-item-a" data-qa="cx.ui.PrairieNav nav-item.name" tabindex="-1" target="" title="Archived">
+              <p>
+               Archived
+              </p>
+             </a>
+             <div class="project-nav-item-right-el item-count">
+              <span class="studio-nav-count-span">
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="project-nav-accordion" data-expanded="false" data-qa="cx.ui.PrairieNav accordion">
+        <div class="project-nav-accordion-container">
+         <header class="project-nav-accordion-header" data-qa="cx.docs.ui.NavBar navbar-studio-management-members">
+          <div class="project-nav-item" data-qa="cx.ui.PrairieNav nav-item" tabindex="0">
+           <div class="project-nav-item-left-el">
+           </div>
+           <a class="project-nav-item-a" data-qa="cx.ui.PrairieNav nav-item.name" tabindex="-1" target="" title="Management">
+            <p>
+             Management
+            </p>
+           </a>
+           <div class="project-nav-item-right-el">
+            <div class="expand">
+             <i class="project-nav-item-icon cxi cxi-down" style="transform: unset;">
+             </i>
+            </div>
+           </div>
+          </div>
+         </header>
+         <div class="" data-qa="cx.ui.PrairieNav accordion-child-content" id="contentContainer" style="max-height: 0px; min-height: 0px;">
+          <div id="content">
+           <div>
+            <div class="project-nav-item" data-qa="cx.ui.navBar.studioManagement.plan" tabindex="0">
+             <div class="project-nav-item-left-el">
+             </div>
+             <a class="project-nav-item-a" data-qa="cx.ui.PrairieNav nav-item.name" href="#studio-management-plan" tabindex="-1" target="" title="Plan">
+              <p>
+               Plan
+              </p>
+             </a>
+             <div class="project-nav-item-right-el item-count">
+              <span class="studio-nav-count-span">
+              </span>
+             </div>
+            </div>
+            <div class="project-nav-item" data-qa="cx.ui.navBar.studioManagement.contacts" tabindex="0">
+             <div class="project-nav-item-left-el">
+             </div>
+             <a class="project-nav-item-a" data-qa="cx.ui.PrairieNav nav-item.name" href="#studio-management-contacts" tabindex="-1" target="" title="Collaborators">
+              <p>
+               Collaborators
+              </p>
+             </a>
+             <div class="project-nav-item-right-el item-count">
+              <span class="studio-nav-count-span">
+              </span>
+             </div>
+            </div>
+            <div class="project-nav-item" data-qa="cx.ui.navBar.studioManagement.settings" tabindex="0">
+             <div class="project-nav-item-left-el">
+             </div>
+             <a class="project-nav-item-a" data-qa="cx.ui.PrairieNav nav-item.name" href="#studio-management-settings" tabindex="-1" target="" title="Settings">
+              <p>
+               Settings
+              </p>
+             </a>
+             <div class="project-nav-item-right-el item-count">
+              <span class="studio-nav-count-span">
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="project-nav-item" data-qa="cx.docs.ui.navBar.help" tabindex="0">
+        <div class="project-nav-item-left-el">
+        </div>
+        <a class="project-nav-item-a" data-qa="cx.ui.PrairieNav nav-item.name" href="https://support.celtx.com" tabindex="-1" target="_blank" title="Help Center">
+         <p>
+          Help Center
+         </p>
+        </a>
+        <div class="project-nav-item-right-el item-count">
+         <span class="studio-nav-count-span">
+         </span>
+        </div>
+       </div>
+       <div class="project-nav-item studio-nav-trash" data-qa="cx.docs.ui.navBar.trash" tabindex="0">
+        <div class="project-nav-item-left-el">
+        </div>
+        <a class="project-nav-item-a" data-qa="cx.ui.PrairieNav nav-item.name" href="#trash" tabindex="-1" target="" title="Trash">
+         <p>
+          Trash
+         </p>
+        </a>
+        <div class="project-nav-item-right-el item-count">
+         <span class="studio-nav-count-span" data-qa="cx.docs.ui.navBar.trash.counter">
+          0
+         </span>
+         <ul class="studio-nav-flyout">
+          <li class="studio-nav-flyout-item">
+           <a>
+            Open Trash
+           </a>
+          </li>
+          <li class="studio-nav-flyout-item">
+           <a>
+            Empty Trash
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </nav>
+    <main id="filelistscroll-container">
+     <div id="banner" style="">
+      <div class="left">
+      </div>
+      <div class="banner-text">
+       <div class="banner-heading">
+        Ready to move your writing forward?
+       </div>
+       <div class="banner-subheading">
+        Upgrade your free plan to create more scripts and unlock premium features
+       </div>
+      </div>
+      <div class="right">
+      </div>
+     </div>
+     <div id="toolbar" style="display: none;">
+      <div id="filetoolbar-container">
+       <div class="pull-left" data-qa="cx.ui.selectalltoggle-container" id="selectalltoggle-container" style="margin: 6px 20px 4px 30px;">
+        <div class="cx-toggle">
+         <label class="cx-toggle-label visually-hidden" for="toggle" title="Select All Projects">
+          Select All Projects
+         </label>
+         <input class="cx-toggle" id="toggle" name="toggle" type="checkbox"/>
+        </div>
+       </div>
+       <div class="cx-filetoolbar" data-qa="cx.ui.fileToolbar" style="display: none;">
+        <!-- <button class="btn btn-filetoolbar cx-button-back"><i class="fa fa-fw fa-arrow-left"></i><span>Back</span></button> -->
+        <button class="btn btn-filetoolbar cx-button-customlabelremove hide" data-qa="cx.ui.fileToolbar.customLabel.remove" disabled="">
+         <i class="fa fa-fw fa-level-up">
+         </i>
+         <span>
+          Move to Home
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-rename" data-qa="cx.ui.fileToolbar.rename" disabled="">
+         <i class="cxi cxi-edit">
+         </i>
+         <span>
+          Rename
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-customlabel hide" data-qa="cx.ui.fileToolbar.customLabel" disabled="">
+         <i class="cxi cxi-folder">
+         </i>
+         <span>
+          Folder
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-share" data-qa="cx.ui.fileToolbar.share" disabled="">
+         <i class="fa fa-fw fa-user">
+         </i>
+         +
+         <span>
+          Share
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-create-project" data-qa="cx.ui.fileToolbar.createProject" disabled="">
+         <i class="cxi cxi cxi-project">
+         </i>
+         <span>
+          Create Project
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-open" data-qa="cx.ui.fileToolbar.open" disabled="">
+         <i class="fa fa-fw fa-edit">
+         </i>
+         <span>
+          Edit
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-open-desktop" data-qa="cx.ui.fileToolbar.openDesktop" disabled="">
+         <i class="fa fa-fw fa-desktop">
+         </i>
+         <span style="font-size: 10px;">
+          Open Desktop Project
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-duplicate" data-qa="cx.ui.fileToolbar.duplicate" disabled="">
+         <i class="cxi cxi-copy">
+         </i>
+         <span>
+          Duplicate
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-move-to-parent hide" data-qa="cx.ui.fileToolbar.moveToParent" disabled="">
+         <i class="cxi cxi-up_arrow">
+         </i>
+         <span>
+          Move to Parent
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-archive hide" data-qa="cx.ui.fileToolbar.archive" disabled="">
+         <i class="cxi cxi-archive">
+         </i>
+         <span>
+          Archive
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-download" data-qa="cx.ui.fileToolbar.download" disabled="">
+         <i class="fa fa-fw fa-download">
+         </i>
+         <span>
+          Download
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-trash" data-qa="cx.ui.fileToolbar.trash" disabled="">
+         <i class="fa fa-fw fa-trash">
+         </i>
+         <span>
+          Trash
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-restore hide" data-qa="cx.ui.fileToolbar.restore" disabled="">
+         <i class="cxi cxi-refresh">
+         </i>
+         <span>
+          Restore
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-unshare hide" data-qa="cx.ui.fileToolbar.unshare" disabled="">
+         <i class="cxi cxi-unshare">
+         </i>
+         <span>
+          Leave project
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-unshare-file hide" data-qa="cx.ui.fileToolbar.unshareFile" disabled="">
+         <i class="cxi cxi-unshare">
+         </i>
+         <span>
+          Leave file
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-purge hide" data-qa="cx.ui.fileToolbar.purge" disabled="">
+         <i class="cxi cxi-cancel_delete">
+         </i>
+         <span>
+          Permanently Delete Items
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-add-teammember hide" data-qa="cx.ui.fileToolbar.teamMember.remove" disabled="">
+         <i class="icon-plus">
+         </i>
+         <span>
+          Add member
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-remove-teammember hide" data-qa="cx.ui.fileToolbar.teamMember.add" disabled="">
+         <i class="icon-remove">
+         </i>
+         <span>
+          Remove member
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-password-change-teammember hide" data-qa="cx.ui.fileToolbar.teamMember.changePassword" disabled="">
+         <i class="icon-lock">
+         </i>
+         <span>
+          Change password
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-add-buddy hide" data-qa="cx.ui.fileToolbar.buddy.add" disabled="">
+         <i class="icon-plus">
+         </i>
+         <span>
+          Add contact
+         </span>
+        </button>
+        <button class="btn btn-filetoolbar cx-button-remove-buddy hide" data-qa="cx.ui.fileToolbar.buddy.remove" disabled="">
+         <i class="icon-remove">
+         </i>
+         <span>
+          Remove contact
+         </span>
+        </button>
+        <button class="btn btn-primary cx-button-upgradeproduction hide" data-qa="cx.ui.fileToolbar.upgradeProduction" disabled="">
+         <i class="fa fa-fw fa-arrow-circle-o-up">
+         </i>
+         <span>
+          Upgrade
+         </span>
+        </button>
+       </div>
+       <div class="pull-right" id="viewselector-container">
+       </div>
+       <label class="pull-right sort-by" style="margin: 2px 31px 3px 20px; text-align: left; letter-spacing: 0px;">
+        <span class="ibmid" style="font-size: 12px; margin-top: 4px;">
+         sort by:
+        </span>
+        <span class="ibmid">
+        </span>
+        <div aria-activedescendant=":4" aria-expanded="false" aria-haspopup="true" class="goog-inline-block goog-menu-button minimalistselect" data-qa="cx.ui.sortMenu" role="listbox" style="user-select: none;" tabindex="0">
+         <div class="goog-inline-block goog-menu-button-outer-box">
+          <div class="goog-inline-block goog-menu-button-inner-box">
+           <div aria-posinset="2" aria-selected="true" aria-setsize="3" class="goog-inline-block goog-menu-button-caption" id=":4" role="option">
+            Name
+           </div>
+           <div class="goog-inline-block goog-menu-button-dropdown fa fa-caret-down">
+           </div>
+          </div>
+         </div>
+        </div>
+       </label>
+       <div class="pull-right" style="margin-right: 10px;">
+        <div class="searchbarform-container" id="goog-menuitem-controls">
+         <form class="form-search searchbarform" style="position:relative;">
+          <div class="input-append searchbarform-inputappend">
+           <div class="searchbarform-inputcontainer">
+            <label class="visually-hidden" for="search">
+             Search
+            </label>
+            <span class="goog-combobox">
+             <input autocomplete="off" class="label-input-label searchbarform-input" data-qa="cx.ui.searchBar.input" id="search" label="" name="search" placeholder="Search" type="text"/>
+             <span class="goog-combobox-button">
+             </span>
+             <div aria-haspopup="true" class="goog-menu goog-menu-vertical hasscrollbars searchbarform-comboboxmenu" role="menu" style="user-select: none; display: none;">
+              <div class="goog-menuitem searchbarform-quickresults-item" id=":b" role="menuitem" style="user-select: none;">
+               <div class="goog-menuitem-content searchbarform-quickresults-item-content">
+                My_Screenplay
+               </div>
+               <div class="searchbarform-quickresults-item-icon full_page cx-filelistitem-icon">
+               </div>
+              </div>
+             </div>
+            </span>
+           </div>
+           <button class="btn searchbarform-submit" data-qa="cx.ui.searchBar.submit" title="Submit Search">
+            <i class="cxi cxi-search" style="font-size: 11px">
+            </i>
+           </button>
+          </div>
+          <button class="searchbarform-clear btn-link" data-qa="cx.ui.searchBar.clear" style="display: none;" tabindex="0" title="Clear Search Input">
+           <i class="cxi cxi-cancel_delete">
+           </i>
+          </button>
+         </form>
+         <div class="searchbarform-quickresults">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="filelist-label plan" id="filelist-label" style="display: none;">
+      Plan
+     </div>
+     <div class="main-view-scroll-container hidden" id="scroll-container">
+      <section data-qa="cx.ui.views.fileListContainer" id="filelist-container" style="">
+       <div data-qa="cx.ui.fileListContainer.noResults" id="noResults" style="display: none">
+        No Results
+       </div>
+       <div class="display display-table box box-full-width box-full-height position position-absolute hide" id="loading" style="z-index: 999">
+        <div class="table-cell center">
+         <i class="fa fa-spinner fa-pulse fa-3x fa-fw">
+         </i>
+        </div>
+       </div>
+       <div class="cx-filelist list-view">
+       </div>
+      </section>
+      <div class="studio-management-plan-container">
+       <div id="nonfilelist-container" style="display: none;">
+       </div>
+      </div>
+     </div>
+     <div class="profile-dashboard-container" id="profileDashboardContainer">
+      <div class="cx-profile-dashboard">
+       <div class="cx-profile-dashboard-header">
+        <div class="cx-profile-dashboard-header-title">
+         Your Celtx Profile
+        </div>
+        <div class="cx-profile-dashboard-header-sub-title">
+         Welcome to your Studio
+        </div>
+       </div>
+       <div class="cx-profile-dashboard-contents-wrapper">
+        <div class="cx-profile-dashboard-contents">
+         <div class="cx-profile-dashboard-block profile-block">
+          <div class="profile-banner-gradient" data-qa="cx.docs.customizeProfile.banner.gradient" style="--profile-banner-background: url(https://lh3.googleusercontent.com/a/ACg8ocKb1oV2Ra5mfc0UPAEA1NQo0qjOo0DkObtlJmOEWF7-PQG4i5E=s96-c);">
+           <div class="profile-banner" data-qa="cx.docs.customizeProfile.banner">
+            <div class="profile-banner-edit light-text" data-qa="cx.docs.customizeProfile.editBanner">
+             <span data-qa="cx.docs.customizeProfile.editBanner.editButton">
+             </span>
+            </div>
+           </div>
+          </div>
+          <div class="profile-block-content">
+           <div class="profile-block-user">
+            <div class="profile-block-name" data-qa="cx.ui.profileDashboard.name">
+             <p class="profile-block-name-text" data-qa="cx.ui.profileDashboard.name.text">
+              Denis Yehorov
+             </p>
+             <button data-qa="cx.ui.profileDashboard.profileEdit">
+              <i class="cxi-edit">
+              </i>
+             </button>
+            </div>
+            <div class="profile-block-plan uppercase" data-qa="cx.ui.profileDashboard.plan">
+             Basic Scriptwriting
+            </div>
+           </div>
+           <label class="uppercase">
+            Favorite Film
+           </label>
+           <div class="profile-block-film">
+            <div data-qa="cx.ui.profileDashboard.film">
+             <button class="profile-block-film-edit" data-qa="cx.ui.profileDashboard.film.edit">
+              <span>
+               Forest Gump
+              </span>
+             </button>
+            </div>
+           </div>
+           <div class="profile-block-warning">
+            <span>
+             Your profile will be visible to people you share with.
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="cx-profile-dashboard-block profile-projects-block" data-qa="cx.ui.profileDashboard.projectsBlock">
+          <div class="cx-profile-dashboard-header profile-projects-block-header">
+           <span class="profile-projects-block-title">
+            <span class="profile-projects-block-text">
+             Recent Projects
+            </span>
+           </span>
+          </div>
+          <div class="profile-projects-block-content">
+           <div class="profile-block-loading-state" data-qa="cx.ui.profileDashboard.loading">
+            <span>
+             Loading
+            </span>
+            <span class="dot-typing">
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="cx-profile-dashboard-block profile-activity-block">
+          <div class="cx-profile-dashboard-header profile-activity-block-header">
+           <span class="profile-activity-block-title">
+            Recent Activity
+           </span>
+           <span class="profile-activity-block-filter">
+           </span>
+          </div>
+          <div class="profile-activity-block-content">
+           <div class="profile-block-loading-state" data-qa="cx.ui.profileDashboard.loading">
+            <span>
+             Loading
+            </span>
+            <span class="dot-typing">
+            </span>
+           </div>
+          </div>
+         </div>
+         <div class="cx-profile-footer">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </main>
+   </div>
+   <input id="history-state" name="history-state" type="hidden" value="profile"/>
+  </div>
+ </body>
+</html>

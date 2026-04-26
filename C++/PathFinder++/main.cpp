@@ -13,7 +13,6 @@ int main() {
 	SYSTEMTIME systemTime{};
 	HANDLE hFind{}; // Windows-specific type that represents an open file search.
 	SECURITY_ATTRIBUTES securityAttributes{};
-	// SHFILEOPSTRUCTA fileOp{};
 
 	std::string user_input{};
 	std::string path{"C:/"};
@@ -255,7 +254,7 @@ int main() {
 
 		hFind = FindFirstFileA((path + user_input).c_str(), &findFileData); // Find the first file and feed this data to the FindNextFile()
 
-		// BOOL is a Windows-specific type that is defined as an int actually, created using typedef keyword. Windows library had this type before bool was introduced into C++.
+		// BOOL is a Windows-specific type that is defined as an int actually, created using typedef keyword. Windows library had this type before "bool" was introduced into C++.
 		BOOL next_file{ FindNextFileA(hFind, &findFileData) };
 
 		std::vector<std::string> files{};

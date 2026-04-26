@@ -7,10 +7,6 @@
 #include <iomanip>
 #include "Header.h"
 
-// ./ - to execute/run an executable file
-// rm -r - to delete an existing directory and its contents.\n\
-// EncryptFileA
-
 int main() {
 
 	WIN32_FIND_DATAA findFileData{}; // Windows-specific structure that receives information about a found file or directory and can provide various details.

@@ -22,7 +22,7 @@ int main() {
 	std::string user_input{};
 	std::string path{"C:/"};
 
-	std::cout << "Welcome to the Linux-based File Explorer v3.0\n \nType \"help\" to get the list of all existing commands." << std::endl;
+	std::cout << "Welcome to the PathFinder++ v3.0\n \nType \"help\" to get the list of all existing commands." << std::endl;
 
 	while (true)
 	{
@@ -138,14 +138,6 @@ int main() {
 				std::cout << "Error: specified directory does not exist!\n";
 			else
 				std::cout << "Error: specified directory is not empty!\n";
-
-			continue;
-		}
-		else if (user_input.substr(0, 5) == "rm -r")
-		{
-			// PCZZTSTR pFrom{};
-			// LPSHFILEOPSTRUCTA lpFileOp{ &fileOp.wFunc() };
-			// SHFileOperationA(lpFileOp);
 
 			continue;
 		}
